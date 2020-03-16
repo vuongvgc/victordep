@@ -1,0 +1,130 @@
+*
+{
+    box-sizing: border-box;
+}
+body
+{
+    margin: 0;
+}
+header h1
+{
+    color: red;
+    text-transform: uppercase;
+    text-shadow: 2px 3px black;
+}
+ul.resnav
+{
+    width: 25%;
+    height: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #b3ffda;
+    overflow: hidden;
+    position: fixed;
+    float: left;
+    outline-color: white;
+    outline-width: 10px;
+    outline-style: solid;
+}
+ul.resnav li a
+{
+    display: block;
+    padding: 14px 16px;
+    text-align: left;
+    text-decoration: none;
+    background-color: #b3ffda;
+    color: black
+}
+
+.clearfix:after
+{
+    content:"";
+    clear: both;
+    display: table;
+}
+ul.resnav li a.active
+{
+    background-color: greenyellow;
+}
+ul.resnav li a:hover:not(.active)
+{
+    background-color: burlywood;
+}
+.content
+{
+    width: 75%;
+    height: 100%;
+    float: right;
+    padding: 0px 20px;
+    background-color:#ccffe6;
+}
+.resnav img
+{
+    width: 100%; 
+}
+@media screen and (max-width: 900px)
+{
+    ul.resnav
+    {
+        float: none;
+        width: 100%;
+        position: relative;
+    }
+    ul.resnav li
+    {
+        float: left;
+    }
+    div.content
+    {
+        float: none;
+        width: 100%;
+    }
+    .resnav li.navimg
+    {
+        float: none;
+        width: 100%;
+        clear: right;
+    }
+    .content img
+    {
+        display: none;
+    }
+}
+@media screen and (max-width: 400px)
+{
+    ul.resnav li
+    {
+        float: none;
+    }
+    ul.resnav
+    {
+        float: none;
+        width: 100%;
+    }
+    .content img
+    {
+        width: none;
+    }
+}
+.content img
+{
+    width: 760px;
+    height: auto;
+}
+address.infor
+{
+    float: left;
+}
+div.contact
+{
+    float: right;
+}
+footer
+{
+    border-top: solid;
+}
+img
+{
+    margin: 10px;
+}
