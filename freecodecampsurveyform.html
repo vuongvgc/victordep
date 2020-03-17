@@ -1,102 +1,77 @@
 <!DOCTYPE html>
 <html>
+
     <head>
         <title>freeCodeCamp Survey Form</title>
-        <meta   name="keywords" 
-                content="freeCodeCamp, Survey, Form"/>
-        <meta   name="description"
-                content="The website to design survey form"/>
-        <meta   name="author"
-                content="Victor"/>
-        <meta   name="viewport" 
-                content="width=device-width, initial-scale:1.0"/>
-        <meta   charset="utf-8"/> 
-        <link   href="styles/style2.css" rel="stylesheet"/>
+        <meta name="keywords" content="freeCodeCamp, Survey, Form" />
+        <meta name="description" content="The website to design survey form" />
+        <meta name="author" content="Victor" />
+        <meta name="viewport" content="width=device-width, initial-scale:1.0" />
+        <meta charset="utf-8" />
+        <link href="styles/style2.css" rel="stylesheet" />
     </head>
+
     <body>
         <header>
             <h1>FreeCodeCamp Survey Form</h1>
-            <p>Thank you for taking the time to 
+            <p>Thank you for taking the time to
                 help us improve the platform</p>
         </header>
         <div>
             <form action="index.html">
                 <fieldset>
                     <div>
-                        <label  for="name">Name</label>
-                        <input  type="text"
-                                id="name"
-                                name="name"
-                                placeholder="Enter your name"
-                                required/>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required />
                     </div>
                     <div>
-                        <label  for="birthday">Birthday</label>
-                        <input  type="date"
-                                id="birthday"
-                                name="birthday"/>
+                        <label for="birthday">Birthday</label>
+                        <input type="date" id="birthday" name="birthday" />
                     </div>
                     <div>
-                        <label  for="age">Age</label>
-                        <input  type="number" 
-                                min="18"
-                                max="99"
-                                id="age"
-                                name="age"/>
+                        <label for="age">Age</label>
+                        <input type="number" min="18" max="99" id="age" name="age" />
                     </div>
                     <div>
-                        <label  for="email">Email</label>
-                        <input  type="email"
-                                id="email"
-                                name="email"
-                                placeholder="Enter your email"
-                                required/>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required />
                     </div>
                     <div>
-                        <label  for="role" >
+                        <label for="role">
                             Which option best describes
-                             your current role?</label>
-                        <select id="role" 
-                                name="role"
-                                required>
-                                <option disabled selected value>
-                                    Select current role
-                                </option>
-                                <option value="student">
-                                    Student
-                                </option>
-                                <option value="job">
-                                    Full Tim Job
-                                </option>
-                                <option value="learner">
-                                    Full Time learner
-                                </option>
-                                <option value="refer">
-                                    Refer Not To Say
-                                </option>
-                                <option value="other">
-                                    Other
-                                </option>
+                            your current role?</label>
+                        <select id="role" name="role" required>
+                            <option disabled selected value>
+                                Select current role
+                            </option>
+                            <option value="student">
+                                Student
+                            </option>
+                            <option value="job">
+                                Full Tim Job
+                            </option>
+                            <option value="learner">
+                                Full Time learner
+                            </option>
+                            <option value="refer">
+                                Refer Not To Say
+                            </option>
+                            <option value="other">
+                                Other
+                            </option>
                         </select>
                     </div>
                     <div>
                         <p>Would you recommend freeCodeCamp to a friend?</p>
                         <label>
-                        <input  type="radio"
-                                name="user-recommend"
-                                value="definitely"
-                                checked/>
-                                Definitely</label><br>
+                            <input type="radio" name="user-recommend" value="definitely" checked />
+                            Definitely</label><br>
                         <label>
-                        <input  type="radio"
-                                name="user-recommend"
-                                value="maybe"/>
-                                Maybe</label><br>
+                            <input type="radio" name="user-recommend" value="maybe" />
+                            Maybe</label><br>
                         <label>
-                        <input  type="radio"
-                                name="user-recommend"
-                                value="not sure"/>
-                                Not Sure</label><br>
+                            <input type="radio" name="user-recommend" value="not sure" />
+                            Not Sure</label><br>
                     </div>
                     <div>
                         <p>What is your favorite feature of freeCodeCamp?</p>
@@ -104,9 +79,9 @@
                             <option disabled selected value>
                                 Select an option</option>
                             <option value="challenges">
-                                    Challenges</option>
+                                Challenges</option>
                             <option value="projects">
-                                    Projects</option>
+                                Projects</option>
                             <option value="community">
                                 Community</option>
                             <option value="opensource">
@@ -115,80 +90,55 @@
                     </div>
                     <div>
                         <p>What would you like to see improved?</p>
-                            <span> (Check all that apply)</span><br>
+                        <span> (Check all that apply)</span><br>
                         <label>
-                            <input  type="checkbox"
-                                    name="refer"
-                                    value="front-end-projects"/>
-                                    Font-end Procjects
+                            <input type="checkbox" name="refer" value="front-end-projects" />
+                            Font-end Procjects
                         </label><br>
                         <label>
-                            <input  type="checkbox"
-                                    name="refer"
-                                    value="back-end-projects"/>
-                                    Back-end Projects
+                            <input type="checkbox" name="refer" value="back-end-projects" />
+                            Back-end Projects
                         </label><br>
                         <label>
-                            <input  type="checkbox"
-                                    name="refer"
-                                    value="data-visualization"/>
-                                    Data Visualization
+                            <input type="checkbox" name="refer" value="data-visualization" />
+                            Data Visualization
                         </label><br>
                         <label>
-                            <input  type="checkbox"
-                                    name="refer"
-                                    value="challenges"/>
-                                    Challenges
+                            <input type="checkbox" name="refer" value="challenges" />
+                            Challenges
                         </label><br>
                         <label>
-                            <input  type="checkbox"
-                                    name="refer"
-                                    value="open-source-community"/>
-                                    Open Source Community
+                            <input type="checkbox" name="refer" value="open-source-community" />
+                            Open Source Community
                         </label><br>
                         <label>
-                            <input  type="checkbox"
-                                    name="refer"
-                                    value="gitter-help-rooms"/>
-                                    Gitter Help Rooms                                
+                            <input type="checkbox" name="refer" value="gitter-help-rooms" />
+                            Gitter Help Rooms
                         </label><br>
                         <label>
-                            <input  type="checkbox"
-                                    name="refer"
-                                    value="video"/>
-                                    Videos
+                            <input type="checkbox" name="refer" value="video" />
+                            Videos
                         </label><br>
                         <label>
-                            <input  type="checkbox"
-                                    name="refer"
-                                    value="city-meetups"/>
-                                    City Meetups
+                            <input type="checkbox" name="refer" value="city-meetups" />
+                            City Meetups
                         </label><br>
                         <label>
-                            <input  type="checkbox"
-                                    name="refer"
-                                    value="wiki"/>
-                                    Wiki
+                            <input type="checkbox" name="refer" value="wiki" />
+                            Wiki
                         </label><br>
                         <label>
-                            <input  type="checkbox"
-                                    name="refer"
-                                    value="forum"/>
-                                    Forum
+                            <input type="checkbox" name="refer" value="forum" />
+                            Forum
                         </label><br>
                         <label>
-                            <input  type="checkbox"
-                                    name="refer"
-                                    value="additional-courses"/>
-                                    Additional Courses
+                            <input type="checkbox" name="refer" value="additional-courses" />
+                            Additional Courses
                         </label><br>
                     </div>
                     <div>
                         <p>Any comments or suggestions?</p>
-                        <textarea   name="comment"
-                                    cols="50" 
-                                    rows="10" 
-                                    placeholder="Enter your comment here">
+                        <textarea name="comment" cols="50" rows="10" placeholder="Enter your comment here">
                         </textarea>
                     </div>
                     <div>
