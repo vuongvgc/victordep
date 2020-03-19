@@ -17,7 +17,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
   </head>
   <body>
-    <div class="container-fluid pt-3">
+    <div class="container-fluid">
       <div>
         <header>
           <div class="row bg-danger text-white pt-3 pb-3">
@@ -40,14 +40,25 @@
               <a class="text-decoration-none text-reset" href="#">Pricing</a>
             </div>
           </div>
-          <div class="text-center">
-            <h1 class="display-2">Handcrafted</h1>
+          <div class="text-center jumbotron">
+            <h1>Handcrafted</h1>
             <h1><small>home-made masterpieces</small></h1>
             <form action="productlandingpage.html">
-              <input type="email" name="email" placeholder="Enter your email" />
-              <button>Get Started</button>
+              <input type="email" name="email" placeholder="Enter your email" /><br>
+              <button class="btn btn-outline-info btn-sm">Get Started<span class="spinner-border spinner-border-sm text-danger"></span></button>
             </form>
           </div>
+            <div>
+                <ul class="breadcrumb">
+                    <li class="breadcrumb-item"><a class="breadcrumb-link" href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a class="breadcrumb-link" href="#">Product</a></li>
+                    <li class="breadcrumb-item"><a class="breadcrumb-link active" href="#"></a>Trombone</li>
+                </ul>
+            </div>
+            <div class="alert alert-info alert-dismissible fade show">
+                <button type="button" class="close" data-dismiss="alert">&times;></button>
+                <span class="spinner-grow spinner-grow-sm text-warning"></span>Hello ! Wellcome to my page !
+            </div>
         </header>
         <div>
           <div>
@@ -139,40 +150,82 @@
                 </tr>
               </table>
             </div>
+            <div class="container-fluid pb-3">
+                <h2>Statics product</h2>
+                <p>The customer order</p>
+                <div class="progress">
+                    <div class="progress-bar bg-primary" style="width: 30%">TENOR TROMBONE</div> 
+                </div><br>
+                <div class="progress">
+                    <div class="progress-bar bg-secondary" style="width: 60%">BASS TROMBONE</div>
+                </div><br>
+                <div class="progress">
+                    <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width: 80%">VALVE TROMBONE</div>
+                </div>
+                <p>Age of Customer</p>
+                <div class="progress">
+                    <div class="progress-bar bg-warning" style="width: 15%">Man</div>
+                    <div class="progress-bar bg-danger" style="width: 30%">Woman</div>
+                    <div class="progress-bar bg-dark" style="width: 55%">other</div>
+                </div>
+            </div>
           </div>
-          <div>
+        <div class="row">
+          <div class="col-md-4">
             <h2 class="bg-primary text-white">TENOR TROMBONE</h2>
-            <ul>
-              <li>$600</li>
-              <li>Lorem ipsum.</li>
-              <li>Lorem ipsum.</li>
-              <li>Lorem ipsum dolor.</li>
-              <li>Lorem ipsum.</li>
-              <li><button>SELECT</button></li>
+            <ul class="list-group">
+              <li class="list-group-item">$600</li>
+              <li class="list-group-item">Lorem ipsum.</li>
+              <li class="list-group-item">Lorem ipsum.</li>
+              <li class="list-group-item">Lorem ipsum dolor.</li>
+              <li class="list-group-item">Lorem ipsum.</li>
+              <li class="list-group-item"><button class="btn btn-primary">SELECT</button></li>
             </ul>
           </div>
-          <div>
+          <div class="col-md-4">
             <h2 class="bg-secondary text-white">BASS TROMBONE</h2>
-            <ul>
-              <li>$900</li>
-              <li>Lorem ipsum.</li>
-              <li>Lorem ipsum.</li>
-              <li>Lorem ipsum dolor.</li>
-              <li>Lorem ipsum.</li>
-              <li><button>SELECT</button></li>
+            <ul class="list-group">
+              <li class="list-group-item">$900</li>
+              <li class="list-group-item">Lorem ipsum.</li>
+              <li class="list-group-item">Lorem ipsum.</li>
+              <li class="list-group-item">Lorem ipsum dolor.</li>
+              <li class="list-group-item">Lorem ipsum.</li>
+              <li class="list-group-item"><button class="btn btn-secondary">SELECT</button></li>
             </ul>
           </div>
-          <div>
-            <h2 class="bg-success text-white">VALVE TROMBONE</h2>
-            <ul>
-              <li>$1200</li>
-              <li>Plays similar to a Trumpet</li>
-              <li>Great for Jazz Bands</li>
-              <li>Lorem ipsum dolor.</li>
-              <li>Lorem ipsum.</li>
-              <li><button>SELECT</button></li>
+          <div class="col-md-4">
+            <h2 class="bg-success text-white">VALVE TROMBONE<span class="badge badge-sm badge-warning badge-pill">New</span></h2>
+            <ul class="list-group">
+              <li class="list-group-item">$1200</li>
+              <li class="list-group-item">Plays similar to a Trumpet</li>
+              <li class="list-group-item">Great for Jazz Bands</li>
+              <li class="list-group-item">Lorem ipsum dolor.</li>
+              <li class="list-group-item">Lorem ipsum.</li>
+              <li class="list-group-item"><button class="btn btn-success">SELECT</button></li>
             </ul>
           </div>
+        </div>
+            <div>
+                <p>See more products</p>
+                <ul class="pagination pagination-md">
+                    <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">...</a> </li>
+                    <li class="page-item"><a class="page-link" href="#">Next</a> </li>
+                </ul>
+            </div>
+            <div>
+                <div class="spinner-border text-muted"></div>
+                <div class="spinner-border text-primary"></div>
+                <div class="spinner-border text-success"></div>
+                <div class="spinner-border text-info"></div>
+                <div class="spinner-border text-warning"></div>
+                <div class="spinner-border text-danger"></div>
+                <div class="spinner-border text-secondary"></div>
+                <div class="spinner-border text-dark"></div>
+                <div class="spinner-border text-light"></div>
+            </div>
           <footer class="bg-secondary text-white">
             <div class="row">
               <div class="col-md-1 text-left text-md-center">Privacy</div>
