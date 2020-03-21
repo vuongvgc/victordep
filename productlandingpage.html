@@ -4,6 +4,7 @@
     <title>Product Landing Page</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="styles/sytleproductpage.css" rel="stylesheet" />
     <script
       src="https://kit.fontawesome.com/caba06fd75.js"
       crossorigin="anonymous"
@@ -20,7 +21,7 @@
     <div class="container-fluid">
       <div>
         <header class="card-header">
-    <!--    <div class="row bg-danger text-white pt-3 pb-3">
+          <!--    <div class="row bg-danger text-white pt-3 pb-3">
             <div class="col-md-8 text-center text-md-left">
               <img
                 class="img-fluid"
@@ -41,42 +42,74 @@
             </div>
           </div>
         -->
-            <nav class=" row navbar navbar-expand-sm fixed-top bg-dark navbar-dark ">
-                <diV  class="col-md-4">
-                <img Class="img-fluid navbar-brand" src="images/original_trombones.png" alt="trombones"/>
-                </diV>
-                <ul class=" col-md-4 navbar-nav">
-                    <li class="nav-item"><a class=" active nav-link" href="#">Feature</a></li>
-                    <li class="nav-item"><a class="disabled nav-link" href="#">How It Works</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
-                </ul>
-                <form class=" col-md-4 form-inline">
-                    <input class="form-control mr-sm-2" type="text" placeholder="Search"/>
-                    <button class="btn btn-primary" type="submit">Search</button>
-                </form>
-            </nav>
+          <nav
+            class=" row navbar navbar-expand-sm fixed-top bg-dark navbar-dark "
+          >
+            <div class="col-md-4">
+              <img
+                class="img-fluid navbar-brand"
+                src="images/original_trombones.png"
+                alt="trombones"
+              />
+            </div>
+            <ul class=" col-md-4 navbar-nav">
+              <li class="nav-item">
+                <a class=" active nav-link" href="#">Feature</a>
+              </li>
+              <li class="nav-item">
+                <a class="disabled nav-link" href="#">How It Works</a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
+            </ul>
+            <form class=" col-md-4 form-inline">
+              <input class="mr-sm-2" type="text" placeholder="Search" />
+              <button class="btn btn-primary" type="submit">Search</button>
+            </form>
+          </nav>
           <div class="text-center jumbotron">
             <h1>Handcrafted</h1>
             <h1><small>home-made masterpieces</small></h1>
-            <form action="productlandingpage.html">
-              <input type="email" name="email" placeholder="Enter your email" /><br>
-              <button class="btn btn-outline-info btn-sm">Get Started<span class="spinner-border spinner-border-sm text-danger"></span></button>
+            <form action="productlandingpage.html" class="was-validated">
+              <div>
+                <input
+                  class=""
+                  type="email"
+                  name="email"
+                  placeholder="Enter your email"
+                  required
+                /><br />
+                <button class="btn btn-outline-info btn-sm">
+                  Get Started<span
+                    class="spinner-border spinner-border-sm text-danger"
+                  ></span>
+                </button>
+              </div>
             </form>
           </div>
-            <div>
-                <ul class="breadcrumb">
-                    <li class="breadcrumb-item"><a class="breadcrumb-link" href="#">Home</a></li>
-                    <li class="breadcrumb-item"><a class="breadcrumb-link" href="#">Product</a></li>
-                    <li class="breadcrumb-item"><a class="breadcrumb-link active" href="#"></a>Trombone</li>
-                </ul>
-            </div>
-            <div class="alert alert-info alert-dismissible fade show">
-                <button type="button" class="close" data-dismiss="alert">&times;></button>
-                <span class="spinner-grow spinner-grow-sm text-warning"></span>Hello ! Wellcome to my page !
-            </div>
+          <div>
+            <ul class="breadcrumb">
+              <li class="breadcrumb-item">
+                <a class="breadcrumb-link" href="#">Home</a>
+              </li>
+              <li class="breadcrumb-item">
+                <a class="breadcrumb-link" href="#">Product</a>
+              </li>
+              <li class="breadcrumb-item">
+                <a class="breadcrumb-link active" href="#"></a>Trombone
+              </li>
+            </ul>
+          </div>
+          <div class="alert alert-info alert-dismissible fade show">
+            <button type="button" class="close" data-dismiss="alert">
+              &times;>
+            </button>
+            <span class="spinner-grow spinner-grow-sm text-warning"></span>Hello
+            ! Wellcome to my page !
+          </div>
         </header>
         <div>
-          <div>
+          <!--
+            <div>
             <img
               class="mx-auto d-block rounded-circle img-thumbnail img-fluid"
               src="images/trombone-photos-wed.png"
@@ -85,6 +118,82 @@
               alt="girl with trombone"
             />
           </div>
+        -->
+          <div id="image-slide" class="carousel slide " data-ride="carousel">
+            <ul class="carousel-indicators">
+              <li
+                data-target="#image-slide"
+                data-slide-to="1"
+                class="active"
+              ></li>
+              <li data-target="#image-slide" data-slide-to="2"></li>
+              <li data-target="#image-slide" data-slide-to="3"></li>
+              <li data-target="#image-slide" data-slide-to="4"></li>
+              <li data-target="#image-slide" data-slide-to="5"></li>
+            </ul>
+            <div class="carousel-inner pt-3">
+              <div class="carousel-item active">
+                <img
+                  src="images/trombone-photos-wed.png"
+                  width="600px"
+                  height="450px"
+                  alt="trombone image"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="images/trombone-photos-wed-slide1.png"
+                  width="600px"
+                  height="450px"
+                  alt="trombone image"
+                />
+                <div class="carousel-caption">
+                  <h3>Los Angeles</h3>
+                  <p>We had such a great time in LA!</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="images/trombone-photos-wed-slide2.png"
+                  width="300px"
+                  height="450px"
+                  alt="trombone image"
+                />
+                <img
+                  src="images/trombone-photos-wed-slide3.png"
+                  width="300px"
+                  height="450px"
+                  alt="trombone image"
+                />
+                <div class="carousel-caption">
+                  <h3>Title</h3>
+                  <p>Content</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="images/trombone-photos-wed-slide4.png"
+                  width="600px"
+                  height="450px"
+                  alt="trombone image"
+                />
+              </div>
+            </div>
+            <a
+              class="carousel-control-prev"
+              href="#image-slide"
+              data-slide="prev"
+            >
+              <span class="carousel-control-prev-icon"></span
+            ></a>
+            <a
+              class="carousel-control-next"
+              href="#image-slide"
+              data-slide="next"
+            >
+              <span class="carousel-control-next-icon"></span
+            ></a>
+          </div>
           <div>
             <p><i class="fab fa-free-code-camp"></i></p>
             <h2>Premium Materials</h2>
@@ -92,43 +201,80 @@
               Our trombones use the shiniest brass which is sourced locally.
               This will increase the longevity of your purchase.
             </p>
-            <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#material">Read more</button>
+            <button
+              type="button"
+              class="btn btn-info"
+              data-toggle="collapse"
+              data-target="#material"
+            >
+              Read more
+            </button>
             <div class="collpase" id="material">
-                <p>Material Good is redefining the way people shop for watches and fine jewelry. A New York City-based luxury goods boutique and showroom, Material Good is designed to be a uniquely immersive and personalized shopping experience. We cultivate relationships and tailor our services to each client.</p>
+              <p>
+                Material Good is redefining the way people shop for watches and
+                fine jewelry. A New York City-based luxury goods boutique and
+                showroom, Material Good is designed to be a uniquely immersive
+                and personalized shopping experience. We cultivate relationships
+                and tailor our services to each client.
+              </p>
             </div>
-        </div>
-            <div>
+          </div>
+          <div>
             <p><i class="fas fa-truck"></i></p>
             <h2>Fast Shipping</h2>
             <p>
               We make sure you recieve your trombone as soon as we have finished
               making it. We also provide free returns if you are not satisfied.
             </p>
-            <button class="btn btn-info" data-toggle="collapse" data-target="#shipping">Chosses shipping</button>
+            <button
+              class="btn btn-info"
+              data-toggle="collapse"
+              data-target="#shipping"
+            >
+              Chosses shipping
+            </button>
             <div class="colllapse" id="shipping">
-                <div class="card-deck">
-                    <div class="card">
-                        <img class="card-img-top" src="images/shipper.png" alt="card-shipper">
-                        <div class="card-body">
-                            <p><i class="fab fa-fedex"></i></p>
-                            <p>Delivery by uniformed FedEx couriers in branded vehicles</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img class="card-img-top" src="images/money.png" alt="card-money">
-                        <div class="card-body">
-                            <p><i class="far fa-money-bill-alt"></i></p>
-                            <p>Service backed by the FedEx Money-Back Guarantee.</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img class="card-img-top" src="images/truck.png" alt="card-truck">
-                        <div class="card-body">
-                            <p><i class="far fa-truck"></i></p>
-                            <p>Innovative tracking that enables FedEx to see where your delivery vehicle is moment to moment, mile by mile, block by block.</p>
-                        </div>
-                    </div>
+              <div class="card-deck">
+                <div class="card">
+                  <img
+                    class="card-img-top"
+                    src="images/shipper.png"
+                    alt="card-shipper"
+                  />
+                  <div class="card-body">
+                    <p><i class="fab fa-fedex"></i></p>
+                    <p>
+                      Delivery by uniformed FedEx couriers in branded vehicles
+                    </p>
+                  </div>
                 </div>
+                <div class="card">
+                  <img
+                    class="card-img-top"
+                    src="images/money.png"
+                    alt="card-money"
+                  />
+                  <div class="card-body">
+                    <p><i class="far fa-money-bill-alt"></i></p>
+                    <p>Service backed by the FedEx Money-Back Guarantee.</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img
+                    class="card-img-top"
+                    src="images/truck.png"
+                    alt="card-truck"
+                  />
+                  <div class="card-body">
+                    <p><i class="far fa-truck"></i></p>
+                    <p>
+                      Innovative tracking that enables FedEx to see where your
+                      delivery vehicle is moment to moment, mile by mile, block
+                      by block.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <div>
@@ -196,85 +342,160 @@
               </table>
             </div>
             <div class="container-fluid pb-3">
-                <h2>Statics product</h2>
-                <p>The customer order</p>
-                <div class="progress">
-                    <div class="progress-bar bg-primary" style="width: 30%">TENOR TROMBONE</div> 
-                </div><br>
-                <div class="progress">
-                    <div class="progress-bar bg-secondary" style="width: 60%">BASS TROMBONE</div>
-                </div><br>
-                <div class="progress">
-                    <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width: 80%">VALVE TROMBONE</div>
+              <h2>Statics product</h2>
+              <p>The customer order</p>
+              <div class="progress">
+                <div class="progress-bar bg-primary" style="width: 30%">
+                  TENOR TROMBONE
                 </div>
-                <p>Age of Customer</p>
-                <div class="progress">
-                    <div class="progress-bar bg-warning" style="width: 15%">Man</div>
-                    <div class="progress-bar bg-danger" style="width: 30%">Woman</div>
-                    <div class="progress-bar bg-dark" style="width: 55%">other</div>
+              </div>
+              <br />
+              <div class="progress">
+                <div class="progress-bar bg-secondary" style="width: 60%">
+                  BASS TROMBONE
                 </div>
+              </div>
+              <br />
+              <div class="progress">
+                <div
+                  class="progress-bar bg-success progress-bar-striped progress-bar-animated"
+                  style="width: 80%"
+                >
+                  VALVE TROMBONE
+                </div>
+              </div>
+              <p>Age of Customer</p>
+              <div class="progress">
+                <div class="progress-bar bg-warning" style="width: 15%">
+                  Man
+                </div>
+                <div class="progress-bar bg-danger" style="width: 30%">
+                  Woman
+                </div>
+                <div class="progress-bar bg-dark" style="width: 55%">other</div>
+              </div>
             </div>
           </div>
-        <div class="row">
-          <div class="col-md-4">
-            <h2 class="bg-primary text-white">TENOR TROMBONE</h2>
-            <ul class="list-group">
-              <li class="list-group-item">$600</li>
-              <li class="list-group-item">Lorem ipsum.</li>
-              <li class="list-group-item">Lorem ipsum.</li>
-              <li class="list-group-item">Lorem ipsum dolor.</li>
-              <li class="list-group-item">Lorem ipsum.</li>
-              <li class="list-group-item"><button class="btn btn-primary">SELECT</button></li>
-            </ul>
-          </div>
-          <div class="col-md-4">
-            <h2 class="bg-secondary text-white">BASS TROMBONE</h2>
-            <ul class="list-group">
-              <li class="list-group-item">$900</li>
-              <li class="list-group-item">Lorem ipsum.</li>
-              <li class="list-group-item">Lorem ipsum.</li>
-              <li class="list-group-item">Lorem ipsum dolor.</li>
-              <li class="list-group-item">Lorem ipsum.</li>
-              <li class="list-group-item"><button class="btn btn-secondary">SELECT</button></li>
-            </ul>
-          </div>
-          <div class="col-md-4">
-            <h2 class="bg-success text-white">VALVE TROMBONE<span class="badge badge-sm badge-warning badge-pill">New</span></h2>
-            <ul class="list-group">
-              <li class="list-group-item">$1200</li>
-              <li class="list-group-item">Plays similar to a Trumpet</li>
-              <li class="list-group-item">Great for Jazz Bands</li>
-              <li class="list-group-item">Lorem ipsum dolor.</li>
-              <li class="list-group-item">Lorem ipsum.</li>
-              <li class="list-group-item"><button class="btn btn-success">SELECT</button></li>
-            </ul>
-          </div>
-        </div>
-            <div>
-                <p>See more products</p>
-                <ul class="pagination pagination-md">
-                    <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
-                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                    <li class="page-item"><a class="page-link" href="#">...</a> </li>
-                    <li class="page-item"><a class="page-link" href="#">Next</a> </li>
-                </ul>
+          <div class="row">
+            <div class="col-md-4">
+              <h2 class="bg-primary text-white">TENOR TROMBONE</h2>
+              <ul class="list-group">
+                <li class="list-group-item">$600</li>
+                <li class="list-group-item">Lorem ipsum.</li>
+                <li class="list-group-item">Lorem ipsum.</li>
+                <li class="list-group-item">Lorem ipsum dolor.</li>
+                <li class="list-group-item">Lorem ipsum.</li>
+                <li class="list-group-item">
+                  <button class="btn btn-primary">SELECT</button>
+                </li>
+              </ul>
             </div>
-            <div>
-                <div class="spinner-border text-muted"></div>
-                <div class="spinner-border text-primary"></div>
-                <div class="spinner-border text-success"></div>
-                <div class="spinner-border text-info"></div>
-                <div class="spinner-border text-warning"></div>
-                <div class="spinner-border text-danger"></div>
-                <div class="spinner-border text-secondary"></div>
-                <div class="spinner-border text-dark"></div>
-                <div class="spinner-border text-light"></div>
+            <div class="col-md-4">
+              <h2 class="bg-secondary text-white">BASS TROMBONE</h2>
+              <ul class="list-group">
+                <li class="list-group-item">$900</li>
+                <li class="list-group-item">Lorem ipsum.</li>
+                <li class="list-group-item">Lorem ipsum.</li>
+                <li class="list-group-item">Lorem ipsum dolor.</li>
+                <li class="list-group-item">Lorem ipsum.</li>
+                <li class="list-group-item">
+                  <button class="btn btn-secondary">SELECT</button>
+                </li>
+              </ul>
             </div>
+            <div class="col-md-4">
+              <h2 class="bg-success text-white">
+                VALVE TROMBONE<span
+                  class="badge badge-sm badge-warning badge-pill"
+                  >New</span
+                >
+              </h2>
+              <ul class="list-group">
+                <li class="list-group-item">$1200</li>
+                <li class="list-group-item">Plays similar to a Trumpet</li>
+                <li class="list-group-item">Great for Jazz Bands</li>
+                <li class="list-group-item">Lorem ipsum dolor.</li>
+                <li class="list-group-item">Lorem ipsum.</li>
+                <li class="list-group-item">
+                  <button class="btn btn-success">SELECT</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <p>See more products</p>
+            <ul class="pagination pagination-md">
+              <li class="page-item disabled">
+                <a class="page-link" href="#">Previous</a>
+              </li>
+              <li class="page-item active">
+                <a class="page-link" href="#">1</a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">...</a></li>
+              <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+          </div>
+          <div>
+            <div class="spinner-border text-muted"></div>
+            <div class="spinner-border text-primary"></div>
+            <div class="spinner-border text-success"></div>
+            <div class="spinner-border text-info"></div>
+            <div class="spinner-border text-warning"></div>
+            <div class="spinner-border text-danger"></div>
+            <div class="spinner-border text-secondary"></div>
+            <div class="spinner-border text-dark"></div>
+            <div class="spinner-border text-light"></div>
+          </div>
+          <div>
+            <form
+              action="productlandingpage.html"
+              class="form-inline was-validated"
+              method="post"
+            >
+              <label for="username">User Name:</label>
+              <input
+                class="form-control mb-2 mr-sm-2"
+                type="text"
+                id="username"
+                name="username"
+                required
+                placeholder="Enter Username"
+              />
+              <div class="valid-feedback">User Name ok.</div>
+              <div class="invalid-feedback">Please fill out User Name.</div>
+              <label class="mb-2 ,mr-sm-2" for="password">Password:</label>
+              <input
+                class="form-control mb-2 mr-sm-2"
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Enter your password"
+                required
+              />
+              <div class="valid-feedback">Passwork ok</div>
+              <div class="invalid-feedback">Please enter you password</div>
+              <div class="form-check">
+                <label class="form-check-label mb-2 mr-sm-2">
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    name="remmeber"
+                  />
+                  Remmeber Me
+                </label>
+              </div>
+              <button class="btn btn-success mb-2" type="submit">Login</button>
+            </form>
+          </div>
           <footer class="card-footer bg-danger text-white">
             <div class="row">
-              <div class="col-md-1 text-left text-md-center"><a class="card-link" href="#" >Privacy</a></div>
-              <div class="col-md-1 text-left text-md-center"><a class="card-link" href="#" >Terms</a></div>
+              <div class="col-md-1 text-left text-md-center">
+                <a class="card-link" href="#">Privacy</a>
+              </div>
+              <div class="col-md-1 text-left text-md-center">
+                <a class="card-link" href="#">Terms</a>
+              </div>
               <div class="col-md-1 text-left text-md-center">Contact</div>
               <div class="font-italic col-md-9 text-left text-md-right ">
                 <p>Copyright 2016, Original Trombones</p>
